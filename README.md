@@ -1,6 +1,60 @@
 # D-licias_Fast_Food
-# Desplegar Proyecto Web en AWS EC2 con Windows Server 2019
-🚀 Guía: Desplegar Proyecto Web en AWS EC2 con Windows Server 2019
+# Desplegar Proyecto Web D'Licias Fast Food Localmente con Windows
+
+Pasos a Seguir:
+
+📋 Qué Necesitas
+
+- XAMPP instalado
+
+- El proyecto descomprimido
+
+1. Preparar XAMPP
+Abrir XAMPP Control Panel
+Iniciar Apache y MySQL
+![local-xampp-start](imagenes/local-xampp-start.png)
+
+2. Colocar tu Proyecto
+Copiar tu carpeta del proyecto a: C:\xampp\htdocs\
+
+![local-colocar-proyecto](imagenes/local-colocar-proyecto.png)
+
+4. Configurar Base de Datos en phpMyAdmin
+Abrir navegador
+Ir a: http://localhost/phpmyadmin
+
+Crear nueva base de datos:
+Click en "Nueva"
+Nombre: db_broasteria
+Click "Crear"
+![local-phpmyadmin1](imagenes/local-phpmyadmin1.png)
+![local-phpmyadmin2](imagenes/local-phpmyadmin2.png)
+
+Pantalla principal
+Crear base de datos
+
+4. Importar o Crear Tablas
+Seleccionar tu base de datos
+Click en "Importar" para subir archivo .sql
+O crear tablas manualmente con "SQL"
+
+En este Caso Crearemos las tablas con algunos datos.
+![local-bd](imagenes/local-bd.png)
+![local-bd2](imagenes/local-bd2.png)
+
+5. Configurar Conexión a BD en tu Proyecto
+Asegurate que tu archivo archivo PHP de conexión este de la siguiente forma:
+
+![local-configuracion](imagenes/local-configuracion.png)
+
+6. Verificamos la pagina en red local todo deberia funcionar con normalidad
+
+![local-pagina-funciona](imagenes/local-pagina-funciona.png)
+
+
+
+# Desplegar Proyecto Web D'Licias Fast Food en la nube AWS EC2 con Windows Server 2019
+🚀 Guía: Desplegar Proyecto Web D'Licias Fast Food en la nube AWS EC2 con Windows Server 2019
 
 📋 Prerrequisitos
 
@@ -123,4 +177,3 @@ Abrir navegador y acceder mediante:
     DNS público: http://ec2-34-201-62-196.compute-1.amazonaws.com/
 
 ![sitio-funcionando](imagenes/paso6-sitio-funcionando.png)
-
